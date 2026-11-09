@@ -1,0 +1,239 @@
+{
+  "cpf": {
+    "validos": [
+      "12345678909",
+      "52998224725"
+    ],
+    "invalidos": [
+      "12345678900",
+      "11111111111",
+      "1234567890",
+      "abcdefghijk"
+    ]
+  },
+  "cnpj": {
+    "validos": [
+      "12345678000195",
+      "12ABC34501DE35"
+    ],
+    "invalidos": [
+      "12345678000190",
+      "12ABC34501DE36",
+      "00000000000000",
+      "1234567800019"
+    ]
+  },
+  "pix_chave": [
+    {
+      "entrada": "123.456.789-09",
+      "chave": "12345678909",
+      "tipo": "cpf"
+    },
+    {
+      "entrada": "12.345.678/0001-95",
+      "chave": "12345678000195",
+      "tipo": "cnpj"
+    },
+    {
+      "entrada": "12.ABC.345/01DE-35",
+      "chave": "12ABC34501DE35",
+      "tipo": "cnpj"
+    },
+    {
+      "entrada": "(62) 99999-0001",
+      "chave": "+5562999990001",
+      "tipo": "telefone"
+    },
+    {
+      "entrada": "+55 62 99999-0001",
+      "chave": "+5562999990001",
+      "tipo": "telefone"
+    },
+    {
+      "entrada": "62 3333-4444",
+      "chave": "+556233334444",
+      "tipo": "telefone"
+    },
+    {
+      "entrada": " Contato@EmporioMana.com.br ",
+      "chave": "contato@emporiomana.com.br",
+      "tipo": "email"
+    },
+    {
+      "entrada": "123E4567-E89B-12D3-A456-426614174000",
+      "chave": "123e4567-e89b-12d3-a456-426614174000",
+      "tipo": "aleatoria"
+    },
+    {
+      "entrada": "00020126330014br.gov.bcb.pix0111123456789095204000053039865802BR5912EMPORIO MANA6007GOIANIA62070503***63045812",
+      "chave": "12345678909",
+      "tipo": "cpf"
+    }
+  ],
+  "pix_chave_recusada": [
+    {
+      "entrada": "123.456.789-00",
+      "erro": "invalida"
+    },
+    {
+      "entrada": "qualquercoisa",
+      "erro": "invalida"
+    },
+    {
+      "entrada": "loja@semdominio",
+      "erro": "invalida"
+    },
+    {
+      "entrada": "+1 415 555 0100",
+      "erro": "invalida"
+    },
+    {
+      "entrada": "minha chave",
+      "erro": "invalida"
+    },
+    {
+      "entrada": "00020126330014br.gov.bcb.pix0111123456789095204000053039865802BR5912EMPORIO MANA6008GOIANIAX62070503***63045812",
+      "erro": "copia_e_cola_corrompido"
+    },
+    {
+      "entrada": "00020101021226590014br.gov.bcb.pix2537pix.example.com/qr/v2/cobv/abcdef12345204000053039865802BR5912EMPORIO MANA6007GOIANIA62070503***6304BDC9",
+      "erro": "copia_e_cola_dinamico"
+    }
+  ],
+  "crc16": [
+    {
+      "entrada": "00020126580014br.gov.bcb.pix0136123e4567-e12b-12d1-a456-4266554400005204000053039865802BR5913Fulano de Tal6008BRASILIA62070503***6304",
+      "crc": "1D3D"
+    }
+  ],
+  "pix_gerado": [
+    {
+      "chave": "12345678909",
+      "nome": "Empório Maná",
+      "cidade": "Goiânia",
+      "centavos": null,
+      "codigo": "00020126330014br.gov.bcb.pix0111123456789095204000053039865802BR5912EMPORIO MANA6007GOIANIA62070503***63045812"
+    },
+    {
+      "chave": "+5562999990001",
+      "nome": "Empório Maná",
+      "cidade": "Goiânia",
+      "centavos": 1290,
+      "codigo": "00020126360014br.gov.bcb.pix0114+5562999990001520400005303986540512.905802BR5912EMPORIO MANA6007GOIANIA62070503***63044F63"
+    }
+  ],
+  "telefone": [
+    {
+      "entrada": "(62) 99999-0001",
+      "e164": "+5562999990001"
+    },
+    {
+      "entrada": "5562999990001",
+      "e164": "+5562999990001"
+    },
+    {
+      "entrada": "062 99999-0001",
+      "e164": "+5562999990001"
+    },
+    {
+      "entrada": "(62) 3333-4444",
+      "e164": "+556233334444"
+    },
+    {
+      "entrada": "99999-0001",
+      "e164": null
+    },
+    {
+      "entrada": "(62) 89999-0001",
+      "e164": null
+    },
+    {
+      "entrada": "+1 415 555 0100",
+      "e164": null
+    }
+  ],
+  "reais": [
+    {
+      "centavos": 0,
+      "texto": "R$ 0,00"
+    },
+    {
+      "centavos": 1290,
+      "texto": "R$ 12,90"
+    },
+    {
+      "centavos": 123456,
+      "texto": "R$ 1.234,56"
+    },
+    {
+      "centavos": 100000000,
+      "texto": "R$ 1.000.000,00"
+    },
+    {
+      "centavos": -550,
+      "texto": "-R$ 5,50"
+    }
+  ],
+  "ler_reais": [
+    {
+      "entrada": "12,90",
+      "centavos": 1290
+    },
+    {
+      "entrada": "R$ 1.234,56",
+      "centavos": 123456
+    },
+    {
+      "entrada": "1.290",
+      "centavos": 129000
+    },
+    {
+      "entrada": "12.9",
+      "centavos": 1290
+    },
+    {
+      "entrada": "7",
+      "centavos": 700
+    },
+    {
+      "entrada": "",
+      "centavos": null
+    },
+    {
+      "entrada": "12,345",
+      "centavos": null
+    },
+    {
+      "entrada": "doze",
+      "centavos": null
+    }
+  ],
+  "slug": [
+    {
+      "entrada": "Empório Maná",
+      "slug": "emporio-mana"
+    },
+    {
+      "entrada": "  Padaria   São João!! ",
+      "slug": "padaria-sao-joao"
+    },
+    {
+      "entrada": "Açaí & Cia",
+      "slug": "acai-cia"
+    },
+    {
+      "entrada": "!!!",
+      "slug": ""
+    }
+  ],
+  "sem_acento": [
+    {
+      "entrada": "Goiânia",
+      "saida": "Goiania"
+    },
+    {
+      "entrada": "Ação Çedilha ÜÉ",
+      "saida": "Acao Cedilha UE"
+    }
+  ]
+}

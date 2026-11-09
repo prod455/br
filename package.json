@@ -1,0 +1,29 @@
+{
+  "name": "@prod455/br",
+  "version": "0.1.0",
+  "description": "CPF, CNPJ, Pix (chave e copia e cola), telefone/WhatsApp, reais e slug: o que todo sistema brasileiro reescreve. Mesmo comportamento no pacote Zig.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "vetores"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.ts",
+    "check": "tsc -p tsconfig.json --noEmit && node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "typescript": ">=5.7"
+  }
+}
